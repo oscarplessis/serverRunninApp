@@ -41,6 +41,10 @@ app.post("/generate-plan", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Serveur en ligne !");
+});
+
 app.listen(port, () => {
   console.log(`✅ Serveur API lancé sur http://localhost:${port}`);
 });
